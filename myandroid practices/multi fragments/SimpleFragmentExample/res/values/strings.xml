@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">SimpleFragmentExample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+     <string-array name="country_names">
+        <item>Bhutan</item>
+        <item>Colombia</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+    </string-array>
+    <array name="country_icons">
+        <item>@drawable/homeicon</item>
+        <item>@drawable/homeicon</item>
+        <item>@drawable/homeicon</item>
+        <item>@drawable/homeicon</item>
+        <item>@drawable/homeicon</item>
+        <item>@drawable/homeicon</item>
+    </array>
+ 
+
+</resources>

@@ -1,0 +1,6 @@
+by intent i.putExtra
+
+by shared preferences
+
+by classes static variables
+

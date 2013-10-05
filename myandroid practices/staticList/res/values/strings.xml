@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">staticList</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+  <string-array name="country_names">
+        <item>Bhutan</item>
+        <item>Colombia</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>        
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+    </string-array>
+    <array name="country_icons">
+        <item>ic_launcher</item>
+        <item>ic_launcher</item>
+        <item>ic_launcher</item>
+        <item>ic_launcher</item>
+        <item>ic_launcher</item>
+        <item>icon3</item>        
+        <item>ic_launcher</item>
+        <item>ic_launcher</item>
+    </array>
+    
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent">
+
+
+  <RelativeLayout 
+      
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+      >
+      <ImageView 
+          android:src="@drawable/homeicon"
+          android:id="@+id/button1"
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+          />      
+          
+          <Button 
+       android:text="btn1"  
+       android:id="@+id/button11"
+       android:layout_below="@+id/button1"     
+       android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+      
+  </RelativeLayout>
+  
+  
+   <RelativeLayout 
+      
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+      >
+      <ImageView 
+          android:src="@drawable/homeicon"
+          android:id="@+id/button2"
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+          />      
+          <Button 
+       android:text="btn1"  
+        android:id="@+id/button22"
+       android:layout_below="@+id/button2"     
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+      
+  </RelativeLayout>
+  
+   
+    <RelativeLayout 
+      
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+      >
+      <ImageView 
+          android:src="@drawable/homeicon"
+          android:id="@+id/button3"
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+          />      
+          <Button 
+       android:text="btn1"  
+        android:id="@+id/button33"
+       android:layout_below="@+id/button3"     
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+      
+  </RelativeLayout>
+  
+    
+     <RelativeLayout 
+      
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+      >
+      <ImageView 
+          android:src="@drawable/homeicon"
+          android:id="@+id/button4"
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+          />      
+          <Button 
+       android:text="btn1"  
+        android:id="@+id/button44"
+       android:layout_below="@+id/button4"     
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+      
+  </RelativeLayout>
+
+  
+  
+     
+   
+    
+</LinearLayout>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/blundell/!svn/ver/485/InAppPurchaseDemo/src/com/blundell/test
+END
+BillingHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/blundell/!svn/ver/485/InAppPurchaseDemo/src/com/blundell/test/BillingHelper.java
+END
+BillingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/blundell/!svn/ver/485/InAppPurchaseDemo/src/com/blundell/test/BillingService.java
+END
+C.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/blundell/!svn/ver/485/InAppPurchaseDemo/src/com/blundell/test/C.java
+END
+AppMainTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/blundell/!svn/ver/486/InAppPurchaseDemo/src/com/blundell/test/AppMainTest.java
+END
+BillingReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/blundell/!svn/ver/485/InAppPurchaseDemo/src/com/blundell/test/BillingReceiver.java
+END
+BillingSecurity.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/blundell/!svn/ver/485/InAppPurchaseDemo/src/com/blundell/test/BillingSecurity.java
+END

@@ -1,0 +1,14 @@
+http://www.coderanch.com/t/556305/Android/Mobile/Dynamically-replacing-Fragments
+
+http://android-er.blogspot.com/2011/12/access-view-inside-fragment-from.html
+
+http://www.mysamplecode.com/2012/08/android-fragment-example.html
+
+
+https://code.google.com/p/demofragment/source/browse/trunk/DemoFragment/?r=4#DemoFragment%2Fres%2Flayout
+
+
+http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/4.0.1_r1/android/app/ListFragment.java
+
+
+http://wptrafficanalyzer.in/blog/itemclick-handler-for-listfragment-in-android/

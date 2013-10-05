@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:descendantFocusability="beforeDescendants"
+android:focusableInTouchMode="true" >
+
+    
+   
+    
+    
+    <RelativeLayout 
+        android:id="@+id/txtView"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        
+        >
+        
+        
+          <EditText
+        android:id="@+id/edtAnim"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/txtview"        
+         android:ems="10"
+         android:hint="username"
+        android:inputType="textEmailAddress"
+        />
+    
+          <EditText
+        android:layout_below="@+id/edtAnim"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:background="@drawable/txtview"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:password="true"/>
+ 
+    </RelativeLayout>
+   
+    <WebView 
+        android:id="@+id/myWebView"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustPan"
+        />
+
+   
+
+</RelativeLayout>

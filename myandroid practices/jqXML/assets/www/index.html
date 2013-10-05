@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--  SOFTWARE VERSION $Rev: 366 $   -->
+<!--
+Disclaimer: IMPORTANT:  This Colworx software is proprietary confidential
+property owned exclusively by Colworx Tech Inc. ("CTI") Without prior written
+consent and compensation, Colworx expressly forbids the use, installation,
+modification or redistribution of this CTI software.
+
+CTI forbids all parties, without a non-exclusive license, under
+CTI's copyrights in this original CTI software (the "CTI Software"), to
+use, reproduce, modify and redistribute the CTI Software, with or without
+modifications, in source and/or binary forms. In all cases, you must retain
+this notice and the following text and disclaimers in all such redistributions
+of the CTI Software.
+
+The CTI Software is provided by CTI on an "AS IS" basis.  CTI MAKES NO
+WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED
+WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE, REGARDING THE CTI SOFTWARE OR ITS USE AND OPERATION ALONE OR IN
+COMBINATION WITH YOUR PRODUCTS.
+
+IN NO EVENT SHALL CTI BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION, MODIFICATION AND/OR
+DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED AND WHETHER UNDER THEORY OF
+CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, EVEN IF
+CTI HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Copyright (C) 2011 Colworx Tech Inc. All Rights Reserved.
+-->
+
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Product Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="apple-touch-startup-image" href="images/loading.png">
+
+    <link rel="apple-touch-icon-precomposed" href="images/icon@2x.png"/>
+    <link rel="shortcut icon" href="images/desktop_48.png"/>
+
+    <link rel="stylesheet" href="css/sencha-touch-1.1.1.css" type="text/css">
+    <link rel="stylesheet" href="css/application.css" type="text/css">
+
+    <script src="cordova-2.3.0.js"></script>
+   
+    <script src="src/sencha-touch.js"></script>
+    <script src="src/compiled.js"></script>
+    <script src="src/data.js"></script>
+
+    <script>
+        function isIE() {
+            var rv = -1;
+            if (navigator.appName == 'Microsoft Internet Explorer') {
+                var ua = navigator.userAgent;
+                var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+                if (re.exec(ua) != null)
+                    rv = parseFloat(RegExp.$1);
+            }
+            return rv > -1;
+        }
+        if (isIE()) {
+            window.location = "ie.html";
+        } else {
+            // document.addEventListener("deviceready", onDeviceReady, false);
+          //  function onDeviceReady() {
+                Ext.setup({
+                    onReady: function () {
+                        Metric.disabled = true;
+                        goog.require("nestle.application.Launcher");
+                        nestle.application.Launcher.launch();
+                       // nestle.ui.AppStorePopup.init();
+                    }
+                });
+           // }
+        }
+        function openLinkInNewWindow(url){
+
+
+
+            var link = Ext.getDom('hidden_link'),
+                    clickevent = document.createEvent('Event');
+
+            link.href = url;
+
+            clickevent.initEvent('click', true, false);
+            link.dispatchEvent(clickevent);
+        }
+    </script>
+
+</head>
+<body style="overflow: hidden">
+<div id="applicationContainer">
+    <a href="" target="_blank" id="hidden_link" style="display:none;"></a>
+</div>
+<!--<div hidden id="popContainer">
+    <div id="popButtons">
+        <div id="popButton_yes">Download Now</div>
+        <div id="popButton_no">No Thanks</div>
+    </div>
+</div>-->
+</body>
+</html>
