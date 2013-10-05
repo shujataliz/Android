@@ -1,0 +1,6 @@
+OpenHelper(Context context) {
+    super(context, "/sdcard/"+DATABASE_NAME, null, DATABASE_VERSION);
+    SQLiteDatabase.openOrCreateDatabase("/sdcard/"+DATABASE_NAME,null);
+
+}
+Other than that, you should always use Environment.getExternalStoreDirectory() to get the path to the external storage, and you should also check the state of the external storage before attempting to use it.

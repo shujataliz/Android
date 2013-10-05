@@ -1,0 +1,11 @@
+webview.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+
+
+
+
+then window.open("www.google.com") works perfectly for android..
+
+
+
+url = "http://www.facebook.com/sharer.php?s=100&p[title]=" + encodeURIComponent("sample facebook") + "&p[summary]=" + encodeURIComponent("this is sample") + "&p[url]=" + encodeURIComponent("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXkPY0BlCjoorCHkAemUqNxL9tgZsSmI06sTG_xSIxa-kuAws7") + "&p[images][0]=" + encodeURIComponent("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXkPY0BlCjoorCHkAemUqNxL9tgZsSmI06sTG_xSIxa-kuAws7") + "&nocache=true";
+window.open(url, '', 'toolbar=0,status=0,width=626,height=436');

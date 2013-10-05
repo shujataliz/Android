@@ -1,0 +1,18 @@
+adb devices
+
+. Connect your device via USB
+
+Connect your mobile device to the host using a USB cable.
+Ensure your device is listed as available by issuing the adb devices command. If not, please check that you have USB debugging enabled on your device.
+On the mobile device, launch Chrome. Open Settings > Advanced > DevTools and check the Enable USB Web debugging option as shown he
+
+
+
+
+adb forward tcp:9222 localabstract:chrome_devtools_remote
+
+adb kill-server
+
+
+
+localhost:9222

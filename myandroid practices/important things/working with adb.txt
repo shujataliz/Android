@@ -1,0 +1,36 @@
+taking permisison from a rooted device.
+
+adb shell
+$ su
+
+-----------------------------------------------
+On rooted device you can do this:
+
+Open cmd
+Type 'adb shell'
+su
+Press 'Allow' on device
+chmod 777 /data /data/data /data/data/com.application.pacakage /data/data/com.application.pacakage/*
+Go to the DDMS view in Eclipse
+After this you should be able to browse the files on the device.
+
+--------------------------------------
+
+adb forward tcp:6100 tcp:7100
+
+cd -- change dir
+ls -- list all dir in it
+# ls /system/app   {List all files in '/system/app':}
+
+push -- to push file{  adb push /data/local/tmp }
+push <local> <remote>	Copies a specified file from your development computer to an emulator/device instance.
+
+pull -- to pull a file
+pull <remote> <local>	Copies a specified file from an emulator/device instance to your development computer.
+
+
+# busybox mv a b  {  Move file from a to b }
+
+# busybox cp a b { Copy file from a to b}
+
+# reboot  { reboot }
